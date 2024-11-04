@@ -1,0 +1,35 @@
+.wid-50 {
+   width: 50%;
+}
+
+.wid-30 {
+   width: 30%;
+}
+
+.arrange-left {
+   float: left;
+}
+
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+
+
+@media only screen and (max-width: 992px) {
+   .wid-50 {
+      width: 100%;
+   }
+
+   .arrange-left {
+      float: none;
+
+   }
+   .wrapper .resume-title h1 {
+      margin-bottom: 0;
+   }
+}
+
+
