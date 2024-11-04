@@ -87,6 +87,10 @@
    font-size: 1rem;
 
 }
+.school-college2 {
+   line-height: 1.5;
+   font-size: 1rem;
+}
 .skills h4{
    line-height: 1.5;
    font-size: 1rem;
@@ -99,12 +103,19 @@
    display: flex;
    justify-content: space-between;
 }
+.flex-space-between2 {
+   display: flex;
+   justify-content: space-between;
+}
 .category{
    display: flex;
    justify-content: space-between;
 }
 
 .flex-space-between span {
+   text-align: right;
+}
+.flex-space-between2 span {
    text-align: right;
 }
 
@@ -152,4 +163,17 @@
    justify-content: space-between;
    font-size: 0.8rem;
 }  
+.flex-space-between2 {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.8rem;
+
+}
+.school-college2 {
+   line-height: 1.5;
+   font-size: 1rem;
+   font-size: 0.8rem;
+}
+
+
 }
