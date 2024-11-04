@@ -87,11 +87,19 @@
    font-size: 1rem;
 
 }
+.skills h4{
+   line-height: 1.5;
+   font-size: 1rem;
+}
 .school-college p{
    line-height: 1.5;
    font-size: 1rem;
 }
 .flex-space-between {
+   display: flex;
+   justify-content: space-between;
+}
+.category{
    display: flex;
    justify-content: space-between;
 }
@@ -117,4 +125,31 @@
       margin-bottom: 0;
       margin-top: 100px;
   }
+}
+
+
+@media only screen and (max-width: 360px) {
+   .wid-50 {
+      width: 100%;
+   }
+
+   .arrange-left {
+      float: none;
+   }
+   .wrapper .resume-title h1 {
+      margin-bottom: 0;
+      margin-top: 100px;
+      background-color: aqua;
+  }
+  
+  .skills h4{
+   line-height: 1.5;
+   font-size: 0.8rem;
+}
+
+.category {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.8rem;
+}  
 }
