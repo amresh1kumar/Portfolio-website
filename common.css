@@ -18,7 +18,7 @@
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 700px) {
    .wid-50 {
       width: 100%;
    }
@@ -152,7 +152,7 @@
 
 
 /* Media Queries */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 700px) {
    .navbar-list {
       display: none;
       /* Hide navbar list on small screens */
