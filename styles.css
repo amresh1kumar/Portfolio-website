@@ -64,9 +64,10 @@ body {
 }
 
 .navbar li:first-child {
-  margin-right: auto;
-  font-size: 2.25rem;
-  font-weight: bold;
+  margin-right: 9px;
+  font-size: 1rem;
+
+
 }
 
 .navbar li:nth-child(5) {
@@ -83,6 +84,8 @@ body {
   width: 35px;
   margin-right: 40px;
 }
+
+
 
 /*Navbar End*/
 
@@ -124,7 +127,7 @@ body {
 
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
 
   .wrapper .profile {
     margin-bottom: 0px;
@@ -135,7 +138,7 @@ body {
     font-size: 1rem;
     text-align: left;
   }
-}
+} 
 
 
 /*-----------------------------Profile-End--------------------------------------- */
@@ -183,3 +186,12 @@ body {
 }
 
 /*-----------------------------Footer-End---------------------------------*/
+
+/*  About Page */ 
+
+.About h1 { 
+  margin-top: 100px;
+  text-align: center;
+ color: #fff;
+
+}

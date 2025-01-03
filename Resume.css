@@ -121,8 +121,7 @@
 
 /*----------------------ResumeContent.css--end----------------------*/
 
-
-
+/* for laptop and pad */
 @media only screen and (max-width: 992px) {
    .wid-50 {
       width: 100%;
@@ -138,7 +137,7 @@
   }
 }
 
-
+/* for mobile screen */
 @media only screen and (max-width: 500px) {
    .wid-50 {
       width: 100%;

@@ -27,9 +27,142 @@
       float: none;
 
    }
+
    .wrapper .resume-title h1 {
       margin-bottom: 0;
+   }
+
+   .navbar {
+      display: none;
    }
 }
 
 
+
+/* Navbar */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #26061f;
+   padding: 10px 20px;
+   height: 80px;
+}
+.navbar a{
+   transition: 0.3s;
+}
+.navbar-logo {
+   margin-top: 50px;
+   font-size: 2.23rem;
+   color: white;
+   font-weight: bold
+}
+
+.navbar-list {
+   display: flex;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar-list a {
+   text-decoration: none;
+   color: white;
+}
+
+/* Sidebar Toggle Button */
+.menu-bars {
+   margin-top: 50px;
+   font-size: 1.3rem;
+   cursor: pointer;
+   color: white;
+   display: none;
+   /* Hidden by default */
+}
+
+.menu-bars:hover {
+   color: black;
+   transform: scale(0.9);
+
+}
+
+/* Sidebar */
+.nav-menu {
+   background-color: #167ac6;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   box-sizing: border-box;
+   width: 200px;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   /* Hidden by default */
+   transition: 0.5s;
+   z-index: 10;
+}
+
+
+
+.nav-menu.active {
+   right: 0;
+   /* Show when active */
+}
+
+.nav-menu-items {
+   list-style-type: none;
+   padding: 20px 0;
+}
+
+.nav-menu-items li {
+   padding: 15px 20px;
+}
+
+.nav-item-5 {
+   margin-left: -4px;
+}
+
+.nav-item-7 {
+   margin-left: -10px;
+}
+
+.nav-menu-items a {
+   text-decoration: none;
+   color: white;
+   transition: 0.3s;
+}
+
+/* Close Button Inside Sidebar */
+.close-button {
+   margin-top: 50px;
+   margin-right: 10px;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 1.5rem;
+   cursor: pointer;
+   color: white;
+}
+
+.close-button a {
+   transition: 0.3s;
+}
+
+.close-button:hover {
+   color: black;
+   transform: scale(0.9);
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 992px) {
+   .navbar-list {
+      display: none;
+      /* Hide navbar list on small screens */
+   }
+
+   .menu-bars {
+      display: block;
+      /* Show the sidebar button */
+   }
+}
