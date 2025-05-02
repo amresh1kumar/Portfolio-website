@@ -11,7 +11,7 @@ html {
 
 body {
   overflow: scroll;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #167ac6;
@@ -30,11 +30,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #167ac6;
-  /* background-color: blueviolet; */
   position: fixed;
   top: 0;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
+  /* border: 2px solid red; */
+
 }
 
 .navbar-list {
@@ -168,3 +169,13 @@ body {
 }
 
 /*-----------------------------Footer-End---------------------------------*/
+
+/*nav bar resp*/
+
+@media only screen and (min-width: 700px) {
+
+  /*Navbar start*/
+  .navbar {
+    height: 8vh;
+  }
+}
