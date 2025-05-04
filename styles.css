@@ -177,6 +177,14 @@ body {
     bottom: 30px;
   }
 
+  body {
+    height: 150vh;
+    flex-direction: column;
+    background-color: #167ac6;
+    text-align: center;
+    font-family: myFont;
+  }
+
   .profile .profile-img {
     margin-top: 150px;
     margin-bottom: 50px;
