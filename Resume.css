@@ -26,7 +26,7 @@
    max-width: 100%;
    margin: 0 auto;
    padding: 20px;
-   margin-top: 140px;
+   margin-top: 100px;
    margin-bottom: 80px;
 }
 
@@ -81,32 +81,38 @@
 }
 
 /*----------------------ResumeContent.css-----------------------*/
-.school-college h4{
+.school-college h4 {
    line-height: 1.5;
    font-size: 1rem;
 
 }
+
 .school-college2 {
    line-height: 1.5;
    font-size: 1rem;
 }
-.skills h4{
+
+.skills h4 {
    line-height: 1.5;
    font-size: 1rem;
 }
-.school-college p{
+
+.school-college p {
    line-height: 1.5;
    font-size: 1rem;
 }
+
 .flex-space-between {
    display: flex;
    justify-content: space-between;
 }
+
 .flex-space-between2 {
    display: flex;
    justify-content: space-between;
 }
-.category{
+
+.category {
    display: flex;
    justify-content: space-between;
 }
@@ -114,6 +120,7 @@
 .flex-space-between span {
    text-align: right;
 }
+
 .flex-space-between2 span {
    text-align: right;
 }
@@ -129,10 +136,16 @@
    .arrange-left {
       float: none;
    }
+
    .wrapper .resume-title h1 {
       margin-bottom: 0;
-      margin-top: 200px;
-  }
+      margin-top: 150px;
+      /* border: 1px solid red; */
+   }
+
+   .App {
+      margin-top: 50px;
+   }
 }
 
 /* for mobile screen */
@@ -144,30 +157,34 @@
    .arrange-left {
       float: none;
    }
+
    .wrapper .resume-title h1 {
       margin-bottom: 0;
-      /* margin-top: 170px; */
-  }
-  
-  .skills h4{
-   line-height: 1.5;
-   font-size: 0.8rem;
-}
+      font-size: 3.2rem;
 
-.category {
-   display: flex;
-   justify-content: space-between;
-   font-size: 0.8rem;
-}  
-.flex-space-between2 {
-   display: flex;
-   justify-content: space-between;
-   font-size: 0.8rem;
+   }
 
-}
-.school-college2 {
-   line-height: 1.5;
-   font-size: 1rem;
-   font-size: 0.8rem;
-}
+   .skills h4 {
+      line-height: 1.5;
+      font-size: 0.8rem;
+   }
+
+   .category {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+   }
+
+   .flex-space-between2 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+
+   }
+
+   .school-college2 {
+      line-height: 1.5;
+      font-size: 1rem;
+      font-size: 0.8rem;
+   }
 }

@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
+  user-select: none;
+  -webkit-user-select: none;
+  /* For Safari */
+  -ms-user-select: none;
+  /* For Internet Explorer/Edge */
 }
 
 html {
@@ -23,7 +28,6 @@ body {
   font-family: myFont;
 }
 
-
 /*Navbar start*/
 .navbar {
   display: flex;
@@ -33,12 +37,13 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   /* border: 2px solid red; */
 
 }
 
 .navbar-list {
+  /* border: 1px solid red; */
   width: 65%;
   list-style-type: none;
   display: flex;
@@ -48,17 +53,25 @@ body {
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
 
+
 .navbar a {
+  -webkit-tap-highlight-color: transparent;
+  /* For mobile Safari */
   text-decoration: none;
-  color: #EAF6F6;
+  color: #fff;
   font-size: 1.2rem;
   transition: 0.3s;
+  background-color: transparent;
+  /* Just to be extra sure */
 }
 
+
+.navbar a:active,
+.navbar a:focus,
 .navbar a:hover {
-  transform: scale(1.2);
-  color: black;
-  font-size: 25px;
+  background-color: transparent;
+  outline: none;
+  color: #000;
 }
 
 .navbar-logo .logo-link {
@@ -66,13 +79,6 @@ body {
   font-size: 2rem;
   margin-left: 20px;
 }
-
-/* .active-link {
-  color: #007bff;
-  font-weight: bold;
-  border-bottom: 2px solid #007bff;
-} */
-
 
 /*Navbar End*/
 
@@ -99,6 +105,13 @@ body {
 
 .profile h1 {
   text-align: justify;
+
+  user-select: none;
+  -webkit-user-select: none;
+  /* For Safari */
+  -ms-user-select: none;
+  /* For Internet Explorer/Edge */
+
 }
 
 .wrapper .profile-intro {
@@ -108,6 +121,53 @@ body {
   color: #fff;
   text-align: left;
 }
+
+
+
+/*-----------------------------Profile-End--------------------------------------- */
+
+
+/*-----------------------------Footer-Start---------------------------------------*/
+
+.footer {
+  background-color: #167ac6;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.footer-link {
+  margin: 10px;
+  padding: 10px;
+  color: #EAF6F6;
+  text-decoration: none;
+  font-size: 1.3rem;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+}
+
+.footer-link:active,
+.footer-link:focus,
+.footer-link:hover {
+  background-color: transparent;
+  outline: none;
+  color: #000;
+}
+
+.copyright {
+  color: gray;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-----------------------------Footer-End---------------------------------*/
+
 
 @media only screen and (max-width: 700px) {
 
@@ -123,59 +183,34 @@ body {
     bottom: 30px;
   }
 
+  .profile .profile-img {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
   .wrapper .profile-intro {
     margin-top: 0px;
     font-size: 1rem;
     text-align: left;
   }
-}
 
-/*-----------------------------Profile-End--------------------------------------- */
-
-
-/*-----------------------------Footer-Start---------------------------------------*/
-
-.footer {
-  background-color: #167ac6;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 15vh;
-  text-align: center;
-}
-
-.footer-link {
-  margin: 10px;
-  padding: 10px;
-  color: #EAF6F6;
-  text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
-  font-size: 1.3rem;
-}
-
-.footer-link:hover {
-  transform: scale(0.9);
-  color: black;
-  font-size: 25px;
-}
-
-.copyright {
-  color: gray;
-  font-size: 1rem;
-  margin-top: 30px;
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/*-----------------------------Footer-End---------------------------------*/
-
-/*nav bar resp*/
-
-@media only screen and (min-width: 700px) {
-
-  /*Navbar start*/
   .navbar {
-    height: 8vh;
+    height: 10vh;
   }
+
+  .footer {
+    height: 10vh;
+  }
+
+  .footer-link {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 5px;
+
+  }
+
+  .copyright {
+    margin-top: 22px;
+  }
+
 }
