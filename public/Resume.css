@@ -1,0 +1,190 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* Resume.js*/
+.wrapper {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.wrapper .resume-title h1 {
+   text-align: center;
+   color: #EAF6F6;
+   margin-top: 310px;
+   font-size: 3.5rem;
+   margin-bottom: 250px;
+}
+
+.next-row {
+   clear: both;
+}
+
+/*dropdown section*/
+.App {
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 20px;
+   margin-top: 100px;
+   margin-bottom: 80px;
+}
+
+.main-heading {
+   text-align: left;
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+
+.dropdown-section {
+   margin-bottom: 10px;
+   border-bottom: 1px solid #808080;
+}
+
+
+.dropdown-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   padding: 15px;
+   font-size: 1.5rem;
+   background-color: #1c75bc;
+   color: white;
+   border-radius: 4px;
+}
+
+.dropdown-header h2 {
+   margin: 0;
+   font-weight: 500;
+}
+
+.dropdown-header span {
+   font-size: 1.2rem;
+}
+
+.dropdown-header:hover {
+   background-color: #155a8d;
+}
+
+.dropdown-content {
+   padding: 15px;
+   background-color: #1c75bc;
+   color: #fff;
+   font-size: 1rem;
+   text-align: left;
+   border: 1px solid #ccc;
+   border-top: 1px solid #ccc;
+   border-left: none;
+   border-right: none;
+   border-radius: 0 0 4px 4px;
+}
+
+/*----------------------ResumeContent.css-----------------------*/
+.school-college h4 {
+   line-height: 1.5;
+   font-size: 1rem;
+
+}
+
+.school-college2 {
+   line-height: 1.5;
+   font-size: 1rem;
+}
+
+.skills h4 {
+   line-height: 1.5;
+   font-size: 1rem;
+}
+
+.school-college p {
+   line-height: 1.5;
+   font-size: 1rem;
+}
+
+.flex-space-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+.flex-space-between2 {
+   display: flex;
+   justify-content: space-between;
+}
+
+.category {
+   display: flex;
+   justify-content: space-between;
+}
+
+.flex-space-between span {
+   text-align: right;
+}
+
+.flex-space-between2 span {
+   text-align: right;
+}
+
+/*----------------------ResumeContent.css--end----------------------*/
+
+/* for laptop and pad */
+@media only screen and (max-width: 700px) {
+   .wid-50 {
+      width: 100%;
+   }
+
+   .arrange-left {
+      float: none;
+   }
+
+   .wrapper .resume-title h1 {
+      margin-bottom: 0;
+      margin-top: 150px;
+      /* border: 1px solid red; */
+   }
+
+   .App {
+      margin-top: 50px;
+   }
+}
+
+/* for mobile screen */
+@media only screen and (max-width: 500px) {
+   .wid-50 {
+      width: 100%;
+   }
+
+   .arrange-left {
+      float: none;
+   }
+
+   .wrapper .resume-title h1 {
+      margin-bottom: 0;
+      font-size: 3.2rem;
+
+   }
+
+   .skills h4 {
+      line-height: 1.5;
+      font-size: 0.8rem;
+   }
+
+   .category {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+   }
+
+   .flex-space-between2 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+
+   }
+
+   .school-college2 {
+      line-height: 1.5;
+      font-size: 1rem;
+      font-size: 0.8rem;
+   }
+}
