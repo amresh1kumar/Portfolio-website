@@ -3,10 +3,18 @@
    padding: 0;
 }
 
+body html {
+   height: 100vh;
+   overflow: hidden;
+}
+
 /* Resume.js*/
 .wrapper {
    margin-left: 5%;
    margin-right: 5%;
+   height: 100vh;
+   display: flex;
+
 }
 
 .wrapper .resume-title h1 {
@@ -15,6 +23,10 @@
    margin-top: 310px;
    font-size: 3.5rem;
    margin-bottom: 250px;
+}
+
+.wrapper .resume-title {
+   overflow-y: hidden;
 }
 
 .next-row {
@@ -28,7 +40,32 @@
    padding: 20px;
    margin-top: 100px;
    margin-bottom: 80px;
+   overflow-y: scroll;
 }
+
+/* Target the scrollbar track (background) */
+.App::-webkit-scrollbar {
+   width: 8px;
+   /* thickness */
+}
+
+/* Background of the scrollbar track */
+.App::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+/* Scrollbar handle */
+.App::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+/* On hover */
+.App::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
 
 .main-heading {
    text-align: left;
@@ -40,7 +77,6 @@
    margin-bottom: 10px;
    border-bottom: 1px solid #808080;
 }
-
 
 .dropdown-header {
    display: flex;
@@ -80,24 +116,46 @@
    border-radius: 0 0 4px 4px;
 }
 
+.dropdown-content::-webkit-scrollbar {
+   width: 8px;
+   /* thickness */
+}
+
+/* Background of the scrollbar track */
+.dropdown-content::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+/* Scrollbar handle */
+.dropdown-content::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+/* On hover */
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
 /*----------------------ResumeContent.css-----------------------*/
-.school-college h4 {
+.wrapper1 .school-college h4 {
    line-height: 1.5;
    font-size: 1rem;
 
 }
 
-.school-college2 {
+.wrapper1 .wrapper1.school-college2 {
    line-height: 1.5;
    font-size: 1rem;
 }
 
-.skills h4 {
+.wrapper1 .skills h4 {
    line-height: 1.5;
    font-size: 1rem;
 }
 
-.school-college p {
+.wrapper1 .school-college p {
    line-height: 1.5;
    font-size: 1rem;
 }
@@ -107,7 +165,7 @@
    justify-content: space-between;
 }
 
-.flex-space-between2 {
+.school-college2 .flex-space-between2 {
    display: flex;
    justify-content: space-between;
 }
@@ -137,6 +195,13 @@
       float: none;
    }
 
+   .wrapper {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: auto;
+      display: block;
+   }
+
    .wrapper .resume-title h1 {
       margin-bottom: 0;
       margin-top: 150px;
@@ -144,7 +209,18 @@
    }
 
    .App {
+      margin-bottom: 80px;
+      overflow-y: hidden;
+   }
+
+
+   .App {
       margin-top: 50px;
+   }
+
+   .dropdown-content {
+      max-height: none;
+      overflow-y: hidden;
    }
 }
 
